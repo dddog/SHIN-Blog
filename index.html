@@ -1,53 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHIN's Portfolio</title>
+    <meta name="description" content="내 포트폴리오 사이트" />
+    <meta nama="author" content="SHIN" />
+    <script
+      src="https://kit.fontawesome.com/f19534a684.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="imgs/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SHIN's Portfolio</title>
-  <meta name="description" content="내 포트폴리오 사이트">
-  <meta nama="author" content="SHIN">
-  <script src="https://kit.fontawesome.com/f19534a684.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="imgs/favicon-32x32.png" sizes="32x32">
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js" defer></script>
-</head>
-
-<body>
-  <!-- Navbar -->
-  <nav id="navbar">
-    <div class="navbar__logo">
-      <i class="far fa-paper-plane"></i>
-      <a href="#">SHIN</a>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="far fa-paper-plane"></i>
+        <a href="#">SHIN</a>
+      </div>
+      <div class="navbar__menu">
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item">Home</li>
+          <li class="navbar__menu__item">About</li>
+          <li class="navbar__menu__item">Skills</li>
+          <li class="navbar__menu__item">My work</li>
+          <li class="navbar__menu__item">Testimonails</li>
+          <li class="navbar__menu__item">Contact</li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+      <img src="imgs/avatar.jpg" alt="profile photo" class="home__avatar" />
+      <h1 class="home__title">Hello, <br />I'm Coder</h1>
+      <h2 class="home__description">맨땅에 헤딩하는 개발자입니다.</h2>
+      <button class="home__contact">Contact me</button>
+    </section>
+    <!-- About -->
+    <section id="about">
+      <h1>About me</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
+        numquam reprehenderit magnam cum maiores enim eveniet officiis,
+        obcaecati qui corporis iste exercitationem, ipsum atque delectus harum,
+        recusandae repellendus ex voluptatum.
+      </p>
+    </section>
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-java"></i>
+        </div>
+        <div class="major__title">Front-end</div>
+        <div class="major__description">
+          스트럿츠2, Spring, 전자정부프레임워크, Swing, <br />Spring-Boot,
+          Mybatis, Hibernate
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-java"></i>
+        </div>
+        <div class="major__title">Back-end</div>
+        <div class="major__description">
+          스트럿츠2, Spring, 전자정부프레임워크, Swing, <br />Spring-Boot,
+          Mybatis, Hibernate
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-java"></i>
+        </div>
+        <div class="major__title"></div>
+        <div class="major__description">
+          스트럿츠2, Spring, 전자정부프레임워크, Swing, <br />Spring-Boot,
+          Mybatis, Hibernate
+        </div>
+      </div>
     </div>
-    <div class="navbar__menu">
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item">Home</li>
-        <li class="navbar__menu__item">About</li>
-        <li class="navbar__menu__item">Skills</li>
-        <li class="navbar__menu__item">My work</li>
-        <li class="navbar__menu__item">Testimonails</li>
-        <li class="navbar__menu__item">Contact</li>
-      </ul>
+    <div class="about__jobs">
+      <div class="job">
+        <img src="imgs/jobs/scl_logo.png" alt="SCL" class="job__logo" />
+        <p class="job__name">병/의원급 IT 서비스 개발, 어쩌구 저쩌구</p>
+        <p class="job__period">2010.12 - 2017.04</p>
+      </div>
+      <div class="job">
+        <img src="imgs/jobs/scl_logo.png" alt="SCL" class="job__logo" />
+        <p class="job__name">병/의원급 IT 서비스 개발, 어쩌구 저쩌구</p>
+        <p class="job__period">2010.12 - 2017.04</p>
+      </div>
     </div>
-  </nav>
-  <!-- Home -->
-  <section id="home">
-    <img src="imgs/avatar.jpg" alt="profile photo" class="home__avatar" />
-    <h1 class="home__title">Hello, <br>I'm Coder</h1>
-    <h2 class="home__description">맨땅에 헤딩하는 개발자입니다.</h2>
-  </section>
-  <!-- About -->
-  <section id="about"></section>
-  <!-- Skills -->
-  <section id="skills"></section>
-  <!-- Work -->
-  <section id="work"></section>
-  <!-- Testimonails -->
-  <section id="testimonials"></section>
-  <!-- Contact -->
-  <section id="contact"></section>
-</body>
-
+    <!-- Skills -->
+    <section id="skills"></section>
+    <!-- Work -->
+    <section id="work"></section>
+    <!-- Testimonails -->
+    <section id="testimonials"></section>
+    <!-- Contact -->
+    <section id="contact"></section>
+  </body>
 </html>
