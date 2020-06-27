@@ -1,317 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SHIN's Portfolio</title>
-    <meta name="description" content="내 포트폴리오 사이트" />
-    <meta nama="author" content="SHIN" />
-    <script
-      src="https://kit.fontawesome.com/f19534a684.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="imgs/favicon-32x32.png"
-      sizes="32x32"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
-  </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <i class="far fa-paper-plane"></i>
-        <a href="#">SHIN</a>
-      </div>
-      <div class="navbar__menu">
-        <ul class="navbar__menu">
-          <li class="navbar__menu__item active">Home</li>
-          <li class="navbar__menu__item">About</li>
-          <li class="navbar__menu__item">Skills</li>
-          <li class="navbar__menu__item">My work</li>
-          <li class="navbar__menu__item">Testimonails</li>
-          <li class="navbar__menu__item">Contact</li>
-        </ul>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHIN's Portfolio</title>
+  <meta name="description" content="내 포트폴리오 사이트" />
+  <meta nama="author" content="SHIN" />
+  <script src="https://kit.fontawesome.com/f19534a684.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="imgs/favicon-32x32.png" sizes="32x32" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
 
-    <!-- Home -->
-    <section id="home">
-      <img src="imgs/avatar.jpg" alt="profile photo" class="home__avatar" />
-      <h1 class="home__title">Hello, <br />I'm Coder</h1>
-      <h2 class="home__description">맨땅에 헤딩하는 개발자입니다.</h2>
-      <button class="home__contact">Contact me</button>
-    </section>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <i class="far fa-paper-plane"></i>
+      <a href="#">SHIN</a>
+    </div>
+    <div class="navbar__menu">
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skills</li>
+        <li class="navbar__menu__item">My work</li>
+        <li class="navbar__menu__item">Testimonails</li>
+        <li class="navbar__menu__item">Contact</li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- About -->
-    <section id="about">
-      <h1>About me</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
-        numquam reprehenderit magnam cum maiores enim eveniet officiis,
-        obcaecati qui corporis iste exercitationem, ipsum atque delectus harum,
-        recusandae repellendus ex voluptatum.
-      </p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-java"></i>
-          </div>
-          <div class="major__title">Front-end</div>
-          <div class="major__description">
-            스트럿츠2, Spring, 전자정부프레임워크, Swing, <br />Spring-Boot,
-            Mybatis, Hibernate
-          </div>
+  <!-- Home -->
+  <section id="home">
+    <img src="imgs/avatar.jpg" alt="profile photo" class="home__avatar" />
+    <h1 class="home__title">Hello, <br />I'm Coder</h1>
+    <h2 class="home__description">맨땅에 헤딩하는 개발자입니다.</h2>
+    <button class="home__contact">Contact me</button>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h1>About me</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium
+      numquam reprehenderit magnam cum maiores enim eveniet officiis,
+      obcaecati qui corporis iste exercitationem, ipsum atque delectus harum,
+      recusandae repellendus ex voluptatum.
+    </p>
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-java"></i>
         </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-java"></i>
-          </div>
-          <div class="major__title">Back-end</div>
-          <div class="major__description">
-            스트럿츠2, Spring, 전자정부프레임워크, Swing, <br />Spring-Boot,
-            Mybatis, Hibernate
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-java"></i>
-          </div>
-          <div class="major__title"></div>
-          <div class="major__description">
-            스트럿츠2, Spring, 전자정부프레임워크, Swing, <br />Spring-Boot,
-            Mybatis, Hibernate
-          </div>
+        <h2 class="major__title">Front-end</h2>
+        <div class="major__description">
+          스트럿츠2, Spring, 전자정부프레임워크, Swing, <br />Spring-Boot,
+          Mybatis, Hibernate
         </div>
       </div>
-      <div class="about__jobs">
-        <div class="job">
-          <img src="imgs/jobs/scl_logo.png" alt="SCL" class="job__logo" />
-          <p class="job__name">병/의원급 IT 서비스 개발, 어쩌구 저쩌구</p>
-          <p class="job__period">2010.12 - 2017.04</p>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-java"></i>
         </div>
-        <div class="job">
-          <img src="imgs/jobs/scl_logo.png" alt="SCL" class="job__logo" />
+        <h2 class="major__title">Back-end</h2>
+        <div class="major__description">
+          스트럿츠2, Spring, 전자정부프레임워크, Swing, <br />Spring-Boot,
+          Mybatis, Hibernate
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-java"></i>
+        </div>
+        <h2 class="major__title">etc</h2>
+        <div class="major__description">
+          스트럿츠2, Spring, 전자정부프레임워크, Swing, <br />Spring-Boot,
+          Mybatis, Hibernate
+        </div>
+      </div>
+    </div>
+    <div class="about__jobs">
+      <div class="job">
+        <img src="imgs/jobs/scl_logo.png" alt="SCL" class="job__logo" />
+        <div class="job__description">
           <p class="job__name">병/의원급 IT 서비스 개발, 어쩌구 저쩌구</p>
           <p class="job__period">2010.12 - 2017.04</p>
         </div>
       </div>
-    </section>
+      <div class="job">
+        <img src="imgs/jobs/scl_logo.png" alt="SCL" class="job__logo" />
+        <div class="job__description">
+          <p class="job__name">병/의원급 IT 서비스 개발, 어쩌구 저쩌구</p>
+          <p class="job__period">2010.12 - 2017.04</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Skills -->
-    <section id="skills">
-      <h1>Skills</h1>
-      <h2>어쩌구&저쩌구</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-        delectus dolor maxime? Vel deserunt et veniam laudantium quisquam ea,
-        doloribus tempore quibusdam tempora repudiandae velit! Expedita repellat
-        odio laborum iusto!
-      </p>
-      <div class="skillset">
-        <div class="skillset__left">
-          <h3 class="sillset__title">Skills</h3>
-          <div class="skill">
-            <div class="skill__description">
-              <span>HTML</span>
-              <span>99%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h1>Skills</h1>
+    <h2>어쩌구&저쩌구</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+      delectus dolor maxime? Vel deserunt et veniam laudantium quisquam ea,
+      doloribus tempore quibusdam tempora repudiandae velit! Expedita repellat
+      odio laborum iusto!
+    </p>
+    <div class="skillset">
+      <div class="skillset__left">
+        <h3 class="sillset__title">Skills</h3>
+        <div class="skill">
+          <div class="skill__description">
+            <span>HTML</span>
+            <span>99%</span>
           </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>CSS</span>
-              <span>60%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>Javascript</span>
-              <span>70%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
-          </div>
-          <div class="skill">
-            <div class="skill__description">
-              <span>Java</span>
-              <span>90%</span>
-            </div>
-            <div class="skill__bar">
-              <div class="skill__value"></div>
-            </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
           </div>
         </div>
-        <div class="skillset_right">
-          <div class="Tools">
-            <h3 class="sillset__title">Tools</h3>
-            <ul class="tools__list">
-              <li><span>Visual studio code</span></li>
-              <li><span>eclipse</span></li>
-              <li><span>XCode</span></li>
-              <li><span>Ubireport</span></li>
-              <li><span>STS</span></li>
-            </ul>
+        <div class="skill">
+          <div class="skill__description">
+            <span>CSS</span>
+            <span>60%</span>
           </div>
-          <div class="etc">
-            <h3 class="sillset__title">etc</h3>
-            <ul class="etc__list">
-              <li><span>Git</span></li>
-              <li><span>SVN</span></li>
-              <li><span>Fuck</span></li>
-            </ul>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>Javascript</span>
+            <span>70%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>Java</span>
+            <span>90%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value"></div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Work -->
-    <section id="work">
-      <h1>My works</h1>
-      <h2>Projects</h2>
-      <div class="work__categories">
-        <button class="category__btn">
-          All<span class="category__count">8</span>
-        </button>
-        <button class="category__btn">
-          Front-end<span class="category__count">4</span>
-        </button>
-        <button class="category__btn">
-          Back-end<span class="category__count">3</span>
-        </button>
-        <button class="category__btn">
-          Mobile<span class="category__count">1</span>
-        </button>
-      </div>
-
-      <div class="work_projects">
-        <a href="#" class="project">
-          <img src="imgs/projects/project1.png" alt="Report Web" />
-          <div class="project__description">
-            <h3>Report Web</h3>
-            <span>결과 조회 웹사이트</span>
-          </div>
-        </a>
-        <a href="#" class="project">
-          <img src="imgs/projects/project1.png" alt="Report Web" />
-          <div class="project__description">
-            <h3>Report Web</h3>
-            <span>결과 조회 웹사이트</span>
-          </div>
-        </a>
-        <a href="#" class="project">
-          <img src="imgs/projects/project1.png" alt="Report Web" />
-          <div class="project__description">
-            <h3>Report Web</h3>
-            <span>결과 조회 웹사이트</span>
-          </div>
-        </a>
-        <a href="#" class="project">
-          <img src="imgs/projects/project1.png" alt="Report Web" />
-          <div class="project__description">
-            <h3>Report Web</h3>
-            <span>결과 조회 웹사이트</span>
-          </div>
-        </a>
-        <a href="#" class="project">
-          <img src="imgs/projects/project1.png" alt="Report Web" />
-          <div class="project__description">
-            <h3>Report Web</h3>
-            <span>결과 조회 웹사이트</span>
-          </div>
-        </a>
-        <a href="#" class="project">
-          <img src="imgs/projects/project1.png" alt="Report Web" />
-          <div class="project__description">
-            <h3>Report Web</h3>
-            <span>결과 조회 웹사이트</span>
-          </div>
-        </a>
-        <a href="#" class="project">
-          <img src="imgs/projects/project1.png" alt="Report Web" />
-          <div class="project__description">
-            <h3>Report Web</h3>
-            <span>결과 조회 웹사이트</span>
-          </div>
-        </a>
-        <a href="#" class="project">
-          <img src="imgs/projects/project1.png" alt="Report Web" />
-          <div class="project__description">
-            <h3>Report Web</h3>
-            <span>결과 조회 웹사이트</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Testimonails -->
-    <section id="testimonials">
-      <h1>Testimonials</h1>
-      <h3>See what they say about me</h3>
-      <div class="testimonials">
-        <div class="testimonial">
-          <img
-            src="imgs/testimonials/people1.png"
-            alt="testimonial"
-            class="testimonial__avatar"
-          />
-          <div class="testimonial__speech-bubble">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-              placeat architecto saepe asperiores. Consectetur odio, sapiente
-              omnis laudantium ipsa odit animi labore molestiae non similique
-              unde explicabo sit quam! Vitae?
-            </p>
-            <p class="name"><a href="#">PARK</a> / GCRL</p>
-          </div>
+      <div class="skillset_right">
+        <div class="Tools">
+          <h3 class="sillset__title">Tools</h3>
+          <ul class="tools__list">
+            <li><span>Visual studio code</span></li>
+            <li><span>eclipse</span></li>
+            <li><span>XCode</span></li>
+            <li><span>Ubireport</span></li>
+            <li><span>STS</span></li>
+          </ul>
         </div>
-        <div class="testimonial">
-          <img
-            src="imgs/testimonials/people1.png"
-            alt="testimonial"
-            class="testimonial__avatar"
-          />
-          <div class="testimonial__speech-bubble">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-              placeat architecto saepe asperiores. Consectetur odio, sapiente
-              omnis laudantium ipsa odit animi labore molestiae non similique
-              unde explicabo sit quam! Vitae?
-            </p>
-            <p class="name"><a href="#">PARK</a> / GCRL</p>
-          </div>
+        <div class="etc">
+          <h3 class="sillset__title">etc</h3>
+          <ul class="etc__list">
+            <li><span>Git</span></li>
+            <li><span>SVN</span></li>
+            <li><span>Fuck</span></li>
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact -->
-    <section id="contact">
-      <h1 class="contact__title">
-        Let's talk
-      </h1>
-      <h2 class="contact__email">
-        azskw1101@gmail.com
-      </h2>
-      <div class="contact__links">
-        <a href="https://github.com/dddog" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
+  <!-- Work -->
+  <section id="work" class="section">
+    <h1>My works</h1>
+    <h2>Projects</h2>
+    <div class="work__categories">
+      <button class="category__btn">
+        All<span class="category__count">8</span>
+      </button>
+      <button class="category__btn">
+        Front-end<span class="category__count">4</span>
+      </button>
+      <button class="category__btn">
+        Back-end<span class="category__count">3</span>
+      </button>
+      <button class="category__btn">
+        Mobile<span class="category__count">1</span>
+      </button>
+    </div>
+
+    <div class="work_projects">
+      <a href="#" class="project">
+        <img src="imgs/projects/project1.png" alt="Report Web" />
+        <div class="project__description">
+          <h3>Report Web</h3>
+          <span>결과 조회 웹사이트</span>
+        </div>
+      </a>
+      <a href="#" class="project">
+        <img src="imgs/projects/project1.png" alt="Report Web" />
+        <div class="project__description">
+          <h3>Report Web</h3>
+          <span>결과 조회 웹사이트</span>
+        </div>
+      </a>
+      <a href="#" class="project">
+        <img src="imgs/projects/project1.png" alt="Report Web" />
+        <div class="project__description">
+          <h3>Report Web</h3>
+          <span>결과 조회 웹사이트</span>
+        </div>
+      </a>
+      <a href="#" class="project">
+        <img src="imgs/projects/project1.png" alt="Report Web" />
+        <div class="project__description">
+          <h3>Report Web</h3>
+          <span>결과 조회 웹사이트</span>
+        </div>
+      </a>
+      <a href="#" class="project">
+        <img src="imgs/projects/project1.png" alt="Report Web" />
+        <div class="project__description">
+          <h3>Report Web</h3>
+          <span>결과 조회 웹사이트</span>
+        </div>
+      </a>
+      <a href="#" class="project">
+        <img src="imgs/projects/project1.png" alt="Report Web" />
+        <div class="project__description">
+          <h3>Report Web</h3>
+          <span>결과 조회 웹사이트</span>
+        </div>
+      </a>
+      <a href="#" class="project">
+        <img src="imgs/projects/project1.png" alt="Report Web" />
+        <div class="project__description">
+          <h3>Report Web</h3>
+          <span>결과 조회 웹사이트</span>
+        </div>
+      </a>
+      <a href="#" class="project">
+        <img src="imgs/projects/project1.png" alt="Report Web" />
+        <div class="project__description">
+          <h3>Report Web</h3>
+          <span>결과 조회 웹사이트</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Testimonails -->
+  <section id="testimonials" class="section">
+    <h1>Testimonials</h1>
+    <h3>See what they say about me</h3>
+    <div class="testimonials">
+      <div class="testimonial">
+        <img src="imgs/testimonials/people1.png" alt="testimonial" class="testimonial__avatar" />
+        <div class="testimonial__speech-bubble">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            placeat architecto saepe asperiores. Consectetur odio, sapiente
+            omnis laudantium ipsa odit animi labore molestiae non similique
+            unde explicabo sit quam! Vitae?
+          </p>
+          <p class="name"><a href="#">PARK</a> / GCRL</p>
+        </div>
       </div>
-      <p class="contact__rights">2020 dddog - All rights reserved</p>
-    </section>
-  </body>
+      <div class="testimonial">
+        <img src="imgs/testimonials/people1.png" alt="testimonial" class="testimonial__avatar" />
+        <div class="testimonial__speech-bubble">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            placeat architecto saepe asperiores. Consectetur odio, sapiente
+            omnis laudantium ipsa odit animi labore molestiae non similique
+            unde explicabo sit quam! Vitae?
+          </p>
+          <p class="name"><a href="#">PARK</a> / GCRL</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h1 class="contact__title">
+      Let's talk
+    </h1>
+    <h2 class="contact__email">
+      azskw1101@gmail.com
+    </h2>
+    <div class="contact__links">
+      <a href="https://github.com/dddog" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <p class="contact__rights">2020 dddog - All rights reserved</p>
+  </section>
+</body>
+
 </html>
