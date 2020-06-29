@@ -21,7 +21,24 @@ navbarMenu.addEventListener('click', (event) => {
   if (link == null) {
     return;
   }
-  // console.log(event.target.dataset.link);
-  const scrollTo = document.querySelector(link);
-  scrollTo.scrollIntoView({ behavior: 'smooth' });
+  scrollIntoView(link);
 });
+
+// Home Contact me button function
+const contactMeBtn = document.querySelector('.home__contact');
+contactMeBtn.addEventListener('click', (event) => {
+  // console.log(event.target.dataset.link);
+  scrollIntoView('#contact');
+});
+
+// Home 스크롤 아래로 이동시 투명처리
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+function scrollIntoView(selector) {
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({ behavior: 'smooth' });
+}
