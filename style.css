@@ -41,7 +41,7 @@
 
 body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   cursor: default;
 }
 
@@ -93,12 +93,20 @@ button {
 
 /* Navbar */
 #navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-orange);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
+  width: 100%;
   padding: 16px;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-orange);
+  padding: 8px;
 }
 
 .navbar__menu {
@@ -136,8 +144,9 @@ button {
 
 /* Home */
 #home {
-  background: url("imgs/background.png") center/cover no-repeat;
+  background: url('imgs/background.png') center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
@@ -372,7 +381,7 @@ button {
 }
 
 .project__description h3:after {
-  content: "";
+  content: '';
   display: block;
   position: relative;
   left: 50%;
