@@ -63,8 +63,15 @@ workBtnContainer.addEventListener('click', (e) => {
   if (filter == null) {
     return;
   }
-  projectContainer.classList.add('anim-out');
 
+  // 버튼 처리
+  const activeBtn = document.querySelector('.category__btn.selected');
+  activeBtn.classList.remove('selected');
+  const target =
+    e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('selected');
+
+  projectContainer.classList.add('anim-out');
   setTimeout(() => {
     projects.forEach((project) => {
       if (filter === '*' || filter === project.dataset.type) {
